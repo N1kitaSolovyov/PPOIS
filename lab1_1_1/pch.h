@@ -1,7 +1,19 @@
-//
-// pch.h
-//
+// pch.h - предкомпилированный заголовок для ускорения сборки
+#ifndef PCH_H
+#define PCH_H
 
-#pragma once
+// Добавьте сюда заголовки, которые используются часто
+#include <gtest/gtest.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <string>
 
-#include "gtest/gtest.h"
+// Заголовки вашего проекта
+#include "Tape.h"
+#include "PostProgram.h" 
+#include "PostMachine.h"
+#include "Cell.h"
+
+#endif //PCH_H
